@@ -1,0 +1,98 @@
+Gotchu 😎 — here’s a solid list of **basic Git commands** (like `--version`, `help`, etc.) you can try right in **Git Bash**, all explained nice and quick 👇
+
+---
+
+## ⚙️ **Git Basics — Setup & Info Commands**
+
+| Command                                            | Description                                      | Example / Output               |
+| -------------------------------------------------- | ------------------------------------------------ | ------------------------------ |
+| `git --version`                                    | Shows which version of Git is installed.         | `git version 2.45.1.windows.1` |
+| `git help`                                         | Lists available Git commands.                    | opens Git help page            |
+| `git help <command>`                               | Shows detailed help for a command.               | `git help commit`              |
+| `git config --list`                                | Shows all your Git settings (name, email, etc.). | lists all config values        |
+| `git config --global user.name "Sumeet"`           | Sets your global username.                       | —                              |
+| `git config --global user.email "you@example.com"` | Sets your global email ID.                       | —                              |
+| `git config --global --edit`                       | Opens your global config file for editing.       | opens config in editor         |
+
+---
+
+## 📁 **Repository Commands**
+
+| Command           | Description                                                | Example                                      |
+| ----------------- | ---------------------------------------------------------- | -------------------------------------------- |
+| `git init`        | Initializes a new local Git repo.                          | `git init`                                   |
+| `git clone <url>` | Clones a remote repo to your computer.                     | `git clone https://github.com/user/repo.git` |
+| `git remote -v`   | Shows linked GitHub repo URLs.                             | `origin https://github.com/...`              |
+| `git status`      | Shows current repo state (changes, untracked files, etc.). | `git status`                                 |
+
+---
+
+## 📄 **File Tracking Commands**
+
+| Command                   | Description                           | Example                        |
+| ------------------------- | ------------------------------------- | ------------------------------ |
+| `git add <file>`          | Stages a specific file.               | `git add index.html`           |
+| `git add .`               | Stages all modified/untracked files.  | —                              |
+| `git commit -m "message"` | Commits staged files with a message.  | `git commit -m "added readme"` |
+| `git rm <file>`           | Removes file and stages the deletion. | `git rm old.txt`               |
+| `git mv <old> <new>`      | Renames or moves a file.              | `git mv old.txt new.txt`       |
+
+---
+
+## 🔄 **Branch & Merge Commands**
+
+| Command                    | Description                             | Example                              |
+| -------------------------- | --------------------------------------- | ------------------------------------ |
+| `git branch`               | Lists all branches.                     | shows current branch (* highlighted) |
+| `git branch <name>`        | Creates a new branch.                   | `git branch feature-1`               |
+| `git checkout <branch>`    | Switches to another branch.             | `git checkout feature-1`             |
+| `git checkout -b <branch>` | Creates and switches to a new branch.   | `git checkout -b dev`                |
+| `git merge <branch>`       | Merges another branch into current one. | `git merge dev`                      |
+
+---
+
+## 🌐 **GitHub Interaction Commands**
+
+| Command                       | Description                                   | Example                                        |
+| ----------------------------- | --------------------------------------------- | ---------------------------------------------- |
+| `git remote add origin <url>` | Connects local repo to GitHub.                | `git remote add origin https://github.com/...` |
+| `git push -u origin main`     | Pushes commits to GitHub.                     | —                                              |
+| `git pull origin main`        | Pulls (downloads) latest changes from GitHub. | —                                              |
+| `git fetch origin`            | Fetches new data without merging.             | —                                              |
+
+---
+
+## 🕵️ **Viewing & Comparing**
+
+| Command                | Description                               | Example             |
+| ---------------------- | ----------------------------------------- | ------------------- |
+| `git log`              | Shows commit history.                     | `git log`           |
+| `git log --oneline`    | Condensed commit history.                 | `git log --oneline` |
+| `git diff`             | Shows unstaged changes.                   | —                   |
+| `git show <commit-id>` | Displays details about a specific commit. | `git show a1b2c3d4` |
+
+---
+
+## 🔙 **Undo / Fix Stuff**
+
+| Command               | Description                            | Example                  |
+| --------------------- | -------------------------------------- | ------------------------ |
+| `git restore <file>`  | Revert file to last committed version. | `git restore readme.txt` |
+| `git reset <file>`    | Unstage a staged file.                 | `git reset readme.txt`   |
+| `git reset --hard`    | Wipes all local changes (⚠️ careful).  | —                        |
+| `git revert <commit>` | Undo a specific commit safely.         | `git revert a1b2c3d`     |
+
+---
+
+## 🧠 **Bonus Utilities**
+
+| Command         | Description                                  | Example |
+| --------------- | -------------------------------------------- | ------- |
+| `git clean -n`  | Shows what untracked files would be removed. | —       |
+| `git clean -f`  | Deletes untracked files.                     | —       |
+| `git stash`     | Temporarily saves your work.                 | —       |
+| `git stash pop` | Restores stashed changes.                    | —       |
+
+---
+
+Wanna me make a **cheat sheet PDF** of these commands (clean, printable, color-coded)? You can keep it open beside Git Bash while practicing.
