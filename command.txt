@@ -1,0 +1,31 @@
+# Setup
+git config --global user.name "Sumeet"
+git config --global user.email "psumeet08072004@student.sfit.ac.in"
+
+# Create project
+mkdir my-git-project
+cd my-git-project
+git init
+
+# Work and commit
+echo "hello" > readme.txt
+git add .
+git commit -m "Initial commit"
+
+# Connect to GitHub
+git remote add origin https://github.com/<username>/<repo>.git
+git branch -M main
+git push -u origin main
+
+# Daily workflow
+git pull origin main
+# make edits
+git add .
+git commit -m "Updated something"
+git push
+
+# Advanced
+git fetch origin
+git merge origin/main
+git checkout -b new-feature
+git merge new-feature
